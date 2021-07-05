@@ -1,0 +1,40 @@
+---
+version: 1
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: '[%(levelname)s] [%(asctime)s:%(name)s] %(message)s'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  file_handler:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: soln-ml.log
+
+root:
+  level: DEBUG
+  handlers: [console, file_handler]
+
+loggers:
+  litebo.facade.bo_facade.BayesianOptimization:
+    level: INFO
+    handlers: [file_handler, console]
+
+  litebo.optimizer.ei_optimization.LocalSearch:
+    level: INFO
+    handlers: [file_handler, console]
+
+  litebo.optimizer.ei_optimization.InterleavedLocalAndRandomSearch:
+    level: INFO
+    handlers: [file_handler, console]
+
+  autodc.components.evaluators.cls_evaluator.ClassificationEvaluator:
+    level: INFO
+    handlers: [file_handler, console]
