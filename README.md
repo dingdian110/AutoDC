@@ -28,7 +28,7 @@ Currently, AutoDC is compatible with: **Python >= 3.5**.
 
 ## Example
 
-Please check [examples](https://github.com/dingdian110/AutoDC/master/AutoDC_mdd_data_3600s.py).
+Please check [examples](https://github.com/dingdian110/AutoDC/blob/master/AutoDC_mdd_data_3600s.py).
 
 ------------------
 
