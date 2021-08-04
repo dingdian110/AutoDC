@@ -63,3 +63,6 @@ We suggest you to install [swig=3.0.12](https://sourceforge.net/projects/swig/fi
 ./configure
 make & make install
 ```
+## Contact
+
+This method is still on progress, any questions can ben sent to <a href="ybai7@pku.edu.cn" target="_blank" rel="nofollow">ybai7@pku.edu.cn</a>
