@@ -1,19 +1,17 @@
 ------------------
 
-## AutoDC: Towards Self-Improving AutoML System.
-Soln-ML is an AutoML system, which is capable of improving its AutoML power by learning from past experience.
-It implements many basic components that enables automatic machine learning. 
-Furthermore, this toolkit can be also used to nourish new AutoML algorithms.
-Soln-ML is developed by <a href="http://net.pku.edu.cn/~cuibin/" target="_blank" rel="nofollow">DAIM Lab</a> at Peking University.
-The goal of Soln-ML is to make machine learning easier to apply both in industry and academia.
+## AutoDC: An Automated Machine Learning Framework for Disease Classification.
+AutoDC is a tailored AutoML system for targeting at different disease classification from gene expression data.
+AutoDC is developed by <a href="http://net.pku.edu.cn/~cuibin/" target="_blank" rel="nofollow">DAIM Lab</a> at Peking University.
+The goal of AutoDC is to make machine learning easier to apply in biological data analysis.
 
-Currently, Soln-ML is compatible with: **Python >= 3.5**.
+Currently, AutoDC is compatible with: **Python >= 3.5**.
 
 ------------------
 
 ## Guiding principles
 
-- __User friendliness.__ Soln-ML needs few human assistance.
+- __User friendliness.__ AutoDC needs few human assistance.
 
 - __Easy extensibility.__ New ML algorithms are simple to add (as new classes and functions), and existing modules provide ample examples. To be able to easily create new modules allows for total expressiveness, making it suitable for advanced research.
 
@@ -22,52 +20,32 @@ Currently, Soln-ML is compatible with: **Python >= 3.5**.
 ------------------
 
 ## Characteristics
-- Soln-ML supports AutoML on large datasets.
+- AutoDC supports AutoML on large dimensional biological datasets.
 
-- Soln-ML enables transfer-learning, meta-learning and reinforcement learning techniques to make AutoML with more intelligent behaviors.
+- AutoDC enables adaptive dimension reduction, transfer-learning, meta-learning and reinforcement learning techniques to make AutoML with more intelligent behaviors for biological data analysis.
 
 ------------------
 
 ## Example
 
-Here is a brief example that uses the package.
-
-```python
-from autodc.estimators import Classifier
-clf = Classifier(dataset_name='iris',
-                 time_limit=150,
-                 output_dir='logs/',
-                 ensemble_method='stacking',
-                 evaluation='holdout',
-                 metric='acc')
-clf.fit(train_data)
-predictions = clf.predict(test_data)
-```
-
-For more details, please check [examples](https://github.com/thomas-young-2013/automl-toolkit/tree/master/examples).
+Please check [examples](https://github.com/dingdian110/AutoDC/master/AutoDC_mdd_data_3600s.py).
 
 ------------------
 
 ## Installation
 
-Before installing Soln-ML, please install the necessary library [swig](https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/).
+Before installing AutoDC, please install the necessary library [swig](https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/).
 
-Soln-ML requires SWIG (>= 3.0, <4.0) as a build dependency, and we suggest you to download & install [swig=3.0.12](https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/).
+AutoDC requires SWIG (>= 3.0, <4.0) as a build dependency, and we suggest you to download & install [swig=3.0.12](https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/).
 
 
-Then, you can install Soln-ML itself. There are two ways to install Soln-ML:
+Then, you can install AutoDC itself. There are two ways to install AutoDC:
 
-#### Installation via pip
-Soln-ML is available on PyPI. You can install it by tying:
-
-```sh
-pip install soln-ml
-```
 
 #### Manual installation from the github source
 
 ```sh
-git clone https://github.com/thomas-young-2013/soln-ml.git && cd soln-ml
+git clone https://github.com/dingdian110/AutoDC.git && cd AutoDC
 cat requirements.txt | xargs -n 1 -L 1 pip install
 python setup.py install
 ```
@@ -120,4 +98,4 @@ python setup.py install
 
 - **for Windows User:**
 
-You need to download [swigwin](https://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.12/), and then install Soln-ML.
+You need to download [swigwin](https://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.12/), and then install AutoDC.
