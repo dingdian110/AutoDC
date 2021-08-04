@@ -1,6 +1,6 @@
 ------------------
 
-## AutoDC: An Automated Machine Learning Framework for Disease Classification.
+## AutoDC: An Automatic Machine Learning Framework for Disease Classification.
 AutoDC is a tailored AutoML system for targeting at different disease classification from gene expression data.
 AutoDC is developed by <a href="http://net.pku.edu.cn/~cuibin/" target="_blank" rel="nofollow">DAIM Lab</a> at Peking University.
 The goal of AutoDC is to make machine learning easier to apply in biological data analysis.
