@@ -63,39 +63,3 @@ We suggest you to install [swig=3.0.12](https://sourceforge.net/projects/swig/fi
 ./configure
 make & make install
 ```
-
-- **for MACOSX User:**
-
-Before installing SWIG, you need to install [pcre](https://sourceforge.net/projects/pcre/files/pcre/8.44/):
-
-```sh
-cd $pcre_dir
-./configure
-make & make install
-```
-
-Then add library path of `/usr/local/lib` for `pcre`:
-
-```sh
-LD_LIBRARY_PATH=/usr/local/lib:/usr/lib
-export LD_LIBRARY_PATH
-```
-
-Finally, install Swig:
-
-```sh
-cd $swig_dir
-./configure
-make & make install
-```
-
-Before installing python package `pyrfr=0.8.0`, download source code from [pypi](https://pypi.org/project/pyrfr/#files):
-
-```sh
-cd $pyrfr_dir
-python setup.py install
-```
-
-- **for Windows User:**
-
-You need to download [swigwin](https://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.12/), and then install AutoDC.
